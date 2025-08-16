@@ -18,14 +18,24 @@ const router = createRouter({
       component: () => import('../views/guests/CommunitiesView.vue'),
     },
     {
-      path: '/feed',
-      name: 'Feed',
-      component: () => import('../views/guests/FeedView.vue'),
+      path: '/createcourse',
+      name: 'CreateCourse',
+      component: () => import('../views/guests/CreateCourseView.vue'),
     },
     { 
       path: '/index', 
       name: 'Index', 
       component: () => import('../views/guests/IndexView.vue') 
+    },
+    { 
+      path: '/profile', 
+      name: 'Profile', 
+      component: () => import('../views/guests/ProfileView.vue') 
+    },
+    { 
+      path: '/studentenrollment', 
+      name: 'StudentEnrollment', 
+      component: () => import('../views/guests/StudentsEnrollmentView.vue') 
     },
     { path: '/login', 
       name: 'Login', 

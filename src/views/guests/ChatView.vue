@@ -5,7 +5,7 @@
     <header class="bg-white border-b shadow-sm fixed top-0 inset-x-0 z-50">
       <div class="max-w-7xl mx-auto h-16 flex items-center justify-between px-4 sm:px-6 lg:px-8">
         <div class="flex items-center space-x-4">
-          <router-link to="/feed" class="text-2xl font-bold text-indigo-600"
+          <router-link to="/index" class="text-2xl font-bold text-indigo-600"
             >EduConnect</router-link
           >
           <div class="hidden md:block">

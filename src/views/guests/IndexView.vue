@@ -1,5 +1,5 @@
 <script setup>
-import router from '@/router'
+
 </script>
 <template>
   <body class="bg-gray-100 text-gray-800 antialiased">
@@ -7,7 +7,7 @@ import router from '@/router'
     <header class="bg-white border-b shadow-sm fixed top-0 inset-x-0 z-50">
       <div class="max-w-7xl mx-auto h-16 flex items-center justify-between px-4 sm:px-6 lg:px-8">
         <div class="flex items-center space-x-4">
-          <router-link to="/feed" class="text-2xl font-bold text-indigo-600">feed</router-link>
+          <router-link to="/index" class="text-2xl font-bold text-indigo-600">EduConnect</router-link>
           <div class="hidden md:block">
             <input
               type="text"
@@ -503,10 +503,10 @@ import router from '@/router'
             event today.
           </div>
           <div class="mt-4 flex space-x-2">
-            <a
-              href="profile.html"
+            <router-link
+              to="/profile"
               class="flex-1 bg-indigo-600 text-white text-sm text-center py-1 rounded-md hover:bg-indigo-700"
-              >View Profile</a
+              >View Profile</router-link
             >
             <a
               href="#settings"
