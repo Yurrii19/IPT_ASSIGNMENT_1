@@ -2,6 +2,7 @@
 
 </script>
 <template>
+
   <body class="bg-gray-100 text-gray-800 antialiased">
     <!-- Top Navigation Bar -->
     <header class="bg-white border-b shadow-sm fixed top-0 inset-x-0 z-50">
@@ -9,81 +10,42 @@
         <div class="flex items-center space-x-4">
           <router-link to="/index" class="text-2xl font-bold text-indigo-600">EduConnect</router-link>
           <div class="hidden md:block">
-            <input
-              type="text"
-              placeholder="Search for courses, people, or communities…"
-              class="w-64 bg-gray-100 border border-gray-300 rounded-full py-2 px-4 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-            />
+            <input type="text" placeholder="Search for courses, people, or communities…"
+              class="w-64 bg-gray-100 border border-gray-300 rounded-full py-2 px-4 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
           </div>
         </div>
         <div class="flex items-center space-x-4">
           <button class="relative text-gray-600 hover:text-indigo-600 focus:outline-none">
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V4a2 2 0 10-4 0v1.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-              />
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V4a2 2 0 10-4 0v1.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
             </svg>
             <span
-              class="absolute -top-1 -right-1 bg-red-500 text-xs text-white rounded-full w-4 h-4 flex items-center justify-center"
-              >3</span
-            >
+              class="absolute -top-1 -right-1 bg-red-500 text-xs text-white rounded-full w-4 h-4 flex items-center justify-center">3</span>
           </button>
-          <button
-            class="relative text-gray-600 hover:text-indigo-600 focus:outline-none md:hidden"
-            id="toggle-chat-mobile"
-          >
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M17 8h2a2 2 0 012 2v7a2 2 0 01-2 2H7l-4 4V10a2 2 0 012-2h2"
-              />
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15 3h2a2 2 0 012 2v7a2 2 0 01-2 2H9l-4 4V5a2 2 0 012-2h2"
-              />
+          <button class="relative text-gray-600 hover:text-indigo-600 focus:outline-none md:hidden"
+            id="toggle-chat-mobile">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17 8h2a2 2 0 012 2v7a2 2 0 01-2 2H7l-4 4V10a2 2 0 012-2h2" />
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15 3h2a2 2 0 012 2v7a2 2 0 01-2 2H9l-4 4V5a2 2 0 012-2h2" />
             </svg>
             <span
-              class="absolute -top-1 -right-1 bg-red-500 text-xs text-white rounded-full w-4 h-4 flex items-center justify-center"
-              >2</span
-            >
+              class="absolute -top-1 -right-1 bg-red-500 text-xs text-white rounded-full w-4 h-4 flex items-center justify-center">2</span>
           </button>
           <div class="relative">
             <button id="profile-button" class="flex items-center focus:outline-none">
               <img
                 src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?auto=format&fit=facearea&facepad=3&w=64&h=64&q=80"
-                alt="User avatar"
-                class="w-8 h-8 rounded-full"
-              />
+                alt="User avatar" class="w-8 h-8 rounded-full" />
             </button>
-            <div
-              id="profile-dropdown"
-              class="hidden absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg py-2 z-10"
-            >
-              <router-link to="/profile" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
-                >View Profile</router-link
-              >
-              <router-link to="/settings" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
-                >Settings</router-link
-              >
-              <router-link to="/logout" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
-                >Log Out</router-link
-              >
+            <div id="profile-dropdown"
+              class="hidden absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg py-2 z-10">
+              <router-link to="/profile" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">View
+                Profile</router-link>
+              <router-link to="/settings" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Settings</router-link>
+              <router-link to="/logout" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Log Out</router-link>
             </div>
           </div>
         </div>
@@ -97,88 +59,36 @@
           <h3 class="text-lg font-semibold mb-4">Navigation</h3>
           <nav class="space-y-2">
             <router-link to="/feed" class="flex items-center text-indigo-600 font-medium">
-              <svg
-                class="w-5 h-5 mr-2"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M8 17l4-4-4-4m8 8l-4-4 4-4"
-                />
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 17l4-4-4-4m8 8l-4-4 4-4" />
               </svg>
               Feed
             </router-link>
-            <router-link
-              to="/communities"
-              class="flex items-center text-gray-600 hover:text-indigo-600"
-            >
-              <svg
-                class="w-5 h-5 mr-2"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1M3 8a4 4 0 014-4 4 4 0 014 4v4a4 4 0 01-4 4 4 4 0 01-4-4V8zM17 8a4 4 0 00-4-4 4 4 0 00-4 4v4a4 4 0 004 4 4 4 0 004-4V8z"
-                />
+            <router-link to="/communities" class="flex items-center text-gray-600 hover:text-indigo-600">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1M3 8a4 4 0 014-4 4 4 0 014 4v4a4 4 0 01-4 4 4 4 0 01-4-4V8zM17 8a4 4 0 00-4-4 4 4 0 00-4 4v4a4 4 0 004 4 4 4 0 004-4V8z" />
               </svg>
               Communities
             </router-link>
-            <router-link
-              to="/assignments"
-              class="flex items-center text-gray-600 hover:text-indigo-600"
-            >
-              <svg
-                class="w-5 h-5 mr-2"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 12h6m2 4H7m4 4h2M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z"
-                />
+            <router-link to="/assignments" class="flex items-center text-gray-600 hover:text-indigo-600">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 12h6m2 4H7m4 4h2M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z" />
               </svg>
               Assignments
             </router-link>
             <a href="#" class="flex items-center text-gray-600 hover:text-indigo-600">
-              <svg
-                class="w-5 h-5 mr-2"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M8 7V3m8 4V3M3 11h18M5 19h14a2 2 0 002-2V7H3v10a2 2 0 002 2z"
-                />
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8 7V3m8 4V3M3 11h18M5 19h14a2 2 0 002-2V7H3v10a2 2 0 002 2z" />
               </svg>
               Events
             </a>
             <router-link to="/chat" class="flex items-center text-gray-600 hover:text-indigo-600">
-              <svg
-                class="w-5 h-5 mr-2"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"
-                />
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
               </svg>
               Chat
             </router-link>
@@ -191,9 +101,7 @@
             <li class="flex items-center justify-between">
               <div class="flex items-center space-x-2">
                 <span
-                  class="w-8 h-8 flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-full text-sm font-semibold"
-                  >CS</span
-                >
+                  class="w-8 h-8 flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-full text-sm font-semibold">CS</span>
                 <span class="text-gray-700">Computer Science</span>
               </div>
               <button class="text-xs text-indigo-600 hover:underline">Join</button>
@@ -201,9 +109,7 @@
             <li class="flex items-center justify-between">
               <div class="flex items-center space-x-2">
                 <span
-                  class="w-8 h-8 flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-full text-sm font-semibold"
-                  >Math</span
-                >
+                  class="w-8 h-8 flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-full text-sm font-semibold">Math</span>
                 <span class="text-gray-700">Mathematics</span>
               </div>
               <button class="text-xs text-indigo-600 hover:underline">Join</button>
@@ -211,9 +117,7 @@
             <li class="flex items-center justify-between">
               <div class="flex items-center space-x-2">
                 <span
-                  class="w-8 h-8 flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-full text-sm font-semibold"
-                  >Bio</span
-                >
+                  class="w-8 h-8 flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-full text-sm font-semibold">Bio</span>
                 <span class="text-gray-700">Biology Club</span>
               </div>
               <button class="text-xs text-indigo-600 hover:underline">Join</button>
@@ -221,9 +125,7 @@
             <li class="flex items-center justify-between">
               <div class="flex items-center space-x-2">
                 <span
-                  class="w-8 h-8 flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-full text-sm font-semibold"
-                  >Art</span
-                >
+                  class="w-8 h-8 flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-full text-sm font-semibold">Art</span>
                 <span class="text-gray-700">Arts Society</span>
               </div>
               <button class="text-xs text-indigo-600 hover:underline">Join</button>
@@ -238,47 +140,25 @@
           <div class="flex space-x-4">
             <img
               src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?auto=format&fit=facearea&facepad=3&w=64&h=64&q=80"
-              alt="Avatar"
-              class="w-10 h-10 rounded-full"
-            />
-            <textarea
-              rows="2"
-              placeholder="Share something with your classmates…"
-              class="flex-1 resize-none bg-gray-100 border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-            ></textarea>
+              alt="Avatar" class="w-10 h-10 rounded-full" />
+            <textarea rows="2" placeholder="Share something with your classmates…"
+              class="flex-1 resize-none bg-gray-100 border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
           </div>
           <div class="mt-3 flex justify-end space-x-3">
             <button class="flex items-center text-gray-600 hover:text-indigo-600">
-              <svg
-                class="w-5 h-5 mr-1"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3 15a4 4 0 018 0h6a4 4 0 018 0m-9-4V2m0 0h4m-4 0H7"
-                />
+              <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 15a4 4 0 018 0h6a4 4 0 018 0m-9-4V2m0 0h4m-4 0H7" />
               </svg>
               Photo/Video
             </button>
             <button class="flex items-center text-gray-600 hover:text-indigo-600">
-              <svg
-                class="w-5 h-5 mr-1"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
+              <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
               </svg>
               Poll
             </button>
-            <button
-              class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition"
-            >
+            <button class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition">
               Post
             </button>
           </div>
@@ -288,9 +168,7 @@
           <div class="p-4 flex items-start space-x-3">
             <img
               src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=facearea&facepad=3&w=64&h=64&q=80"
-              alt="User avatar"
-              class="w-10 h-10 rounded-full"
-            />
+              alt="User avatar" class="w-10 h-10 rounded-full" />
             <div class="flex-1">
               <div class="flex items-center justify-between">
                 <div>
@@ -298,13 +176,7 @@
                   <span class="text-sm text-gray-500">Posted 2 hours ago</span>
                 </div>
                 <button class="text-gray-400 hover:text-gray-600">
-                  <svg
-                    class="w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                     <circle cx="12" cy="12" r="1" />
                     <circle cx="19" cy="12" r="1" />
                     <circle cx="5" cy="12" r="1" />
@@ -317,50 +189,22 @@
               </p>
               <div class="mt-4 flex items-center space-x-6 text-gray-600">
                 <button class="flex items-center hover:text-indigo-600">
-                  <svg
-                    class="w-5 h-5 mr-1"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M14 9l3-3 3 3m0 6l-3 3-3-3M3 12h12"
-                    />
+                  <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 9l3-3 3 3m0 6l-3 3-3-3M3 12h12" />
                   </svg>
                   Like (12)
                 </button>
                 <button class="flex items-center hover:text-indigo-600">
-                  <svg
-                    class="w-5 h-5 mr-1"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M8 10h.01M12 10h.01M16 10h.01M21 16v-5a2 2 0 00-2-2H5a2 2 0 00-2 2v5a2 2 0 002 2h3l4 4 4-4h3a2 2 0 002-2z"
-                    />
+                  <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M8 10h.01M12 10h.01M16 10h.01M21 16v-5a2 2 0 00-2-2H5a2 2 0 00-2 2v5a2 2 0 002 2h3l4 4 4-4h3a2 2 0 002-2z" />
                   </svg>
                   Comment (4)
                 </button>
                 <button class="flex items-center hover:text-indigo-600">
-                  <svg
-                    class="w-5 h-5 mr-1"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M4 4v5h.582c3.592 0 5.444 1.13 5.444 4.618V20h4.289V13.618c0-3.488 1.852-4.618 5.444-4.618H20V4H4z"
-                    />
+                  <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M4 4v5h.582c3.592 0 5.444 1.13 5.444 4.618V20h4.289V13.618c0-3.488 1.852-4.618 5.444-4.618H20V4H4z" />
                   </svg>
                   Share
                 </button>
@@ -372,9 +216,7 @@
             <div class="flex space-x-3">
               <img
                 src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=facearea&facepad=3&w=64&h=64&q=80"
-                alt="User avatar"
-                class="w-8 h-8 rounded-full"
-              />
+                alt="User avatar" class="w-8 h-8 rounded-full" />
               <div class="flex-1 bg-white p-2 rounded-md shadow">
                 <div class="flex justify-between items-center">
                   <span class="text-sm font-semibold">John Smith</span>
@@ -388,9 +230,7 @@
             <div class="flex space-x-3">
               <img
                 src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=facearea&facepad=3&w=64&h=64&q=80"
-                alt="User avatar"
-                class="w-8 h-8 rounded-full"
-              />
+                alt="User avatar" class="w-8 h-8 rounded-full" />
               <div class="flex-1 bg-white p-2 rounded-md shadow">
                 <div class="flex justify-between items-center">
                   <span class="text-sm font-semibold">Emily Chen</span>
@@ -413,9 +253,7 @@
                 <h4 class="font-medium text-gray-800">Calculus Homework #3</h4>
                 <p class="text-sm text-gray-500">Due Aug 5, 2025</p>
               </div>
-              <button
-                class="bg-green-500 text-white text-sm px-3 py-1 rounded-md hover:bg-green-600"
-              >
+              <button class="bg-green-500 text-white text-sm px-3 py-1 rounded-md hover:bg-green-600">
                 Submit
               </button>
             </li>
@@ -424,9 +262,7 @@
                 <h4 class="font-medium text-gray-800">Group Project Proposal</h4>
                 <p class="text-sm text-gray-500">Due Aug 10, 2025</p>
               </div>
-              <button
-                class="bg-green-500 text-white text-sm px-3 py-1 rounded-md hover:bg-green-600"
-              >
+              <button class="bg-green-500 text-white text-sm px-3 py-1 rounded-md hover:bg-green-600">
                 Submit
               </button>
             </li>
@@ -435,9 +271,7 @@
                 <h4 class="font-medium text-gray-800">Reading Response</h4>
                 <p class="text-sm text-gray-500">Due Aug 12, 2025</p>
               </div>
-              <button
-                class="bg-green-500 text-white text-sm px-3 py-1 rounded-md hover:bg-green-600"
-              >
+              <button class="bg-green-500 text-white text-sm px-3 py-1 rounded-md hover:bg-green-600">
                 Submit
               </button>
             </li>
@@ -452,9 +286,7 @@
                 <h4 class="font-medium text-gray-800">Webinar: Career in AI</h4>
                 <p class="text-sm text-gray-500">Aug 3, 2025 – 3:00 PM</p>
               </div>
-              <button
-                class="bg-indigo-600 text-white text-sm px-3 py-1 rounded-md hover:bg-indigo-700"
-              >
+              <button class="bg-indigo-600 text-white text-sm px-3 py-1 rounded-md hover:bg-indigo-700">
                 Join
               </button>
             </li>
@@ -463,9 +295,7 @@
                 <h4 class="font-medium text-gray-800">Study Group Session</h4>
                 <p class="text-sm text-gray-500">Aug 6, 2025 – 10:00 AM</p>
               </div>
-              <button
-                class="bg-indigo-600 text-white text-sm px-3 py-1 rounded-md hover:bg-indigo-700"
-              >
+              <button class="bg-indigo-600 text-white text-sm px-3 py-1 rounded-md hover:bg-indigo-700">
                 Join
               </button>
             </li>
@@ -474,9 +304,7 @@
                 <h4 class="font-medium text-gray-800">Hackathon Kickoff</h4>
                 <p class="text-sm text-gray-500">Aug 15, 2025 – 9:00 AM</p>
               </div>
-              <button
-                class="bg-indigo-600 text-white text-sm px-3 py-1 rounded-md hover:bg-indigo-700"
-              >
+              <button class="bg-indigo-600 text-white text-sm px-3 py-1 rounded-md hover:bg-indigo-700">
                 Join
               </button>
             </li>
@@ -490,9 +318,7 @@
           <div class="flex items-center space-x-3">
             <img
               src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?auto=format&fit=facearea&facepad=3&w=64&h=64&q=80"
-              alt="User avatar"
-              class="w-12 h-12 rounded-full"
-            />
+              alt="User avatar" class="w-12 h-12 rounded-full" />
             <div>
               <h4 class="font-semibold text-gray-800">Alex Johnson</h4>
               <p class="text-sm text-gray-500">Computer Science, Class of 2026</p>
@@ -503,16 +329,11 @@
             event today.
           </div>
           <div class="mt-4 flex space-x-2">
-            <router-link
-              to="/profile"
-              class="flex-1 bg-indigo-600 text-white text-sm text-center py-1 rounded-md hover:bg-indigo-700"
-              >View Profile</router-link
-            >
-            <a
-              href="#settings"
-              class="flex-1 bg-gray-200 text-gray-700 text-sm text-center py-1 rounded-md hover:bg-gray-300"
-              >Settings</a
-            >
+            <router-link to="/profile"
+              class="flex-1 bg-indigo-600 text-white text-sm text-center py-1 rounded-md hover:bg-indigo-700">View
+              Profile</router-link>
+            <a href="#settings"
+              class="flex-1 bg-gray-200 text-gray-700 text-sm text-center py-1 rounded-md hover:bg-gray-300">Settings</a>
           </div>
         </div>
         <!-- Chat section: list & conversation (similar to main template) -->
@@ -522,9 +343,7 @@
             <div class="flex items-center p-2 rounded-md bg-gray-100 cursor-pointer">
               <img
                 src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=facearea&facepad=3&w=64&h=64&q=80"
-                alt="Contact"
-                class="w-8 h-8 rounded-full mr-3"
-              />
+                alt="Contact" class="w-8 h-8 rounded-full mr-3" />
               <div class="flex-1">
                 <div class="flex justify-between text-sm">
                   <span class="font-medium">John Smith</span>
@@ -536,9 +355,7 @@
             <div class="flex items-center p-2 rounded-md hover:bg-gray-100 cursor-pointer">
               <img
                 src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=facearea&facepad=3&w=64&h=64&q=80"
-                alt="Contact"
-                class="w-8 h-8 rounded-full mr-3"
-              />
+                alt="Contact" class="w-8 h-8 rounded-full mr-3" />
               <div class="flex-1">
                 <div class="flex justify-between text-sm">
                   <span class="font-medium">Emily Chen</span>
@@ -550,9 +367,7 @@
             <div class="flex items-center p-2 rounded-md hover:bg-gray-100 cursor-pointer">
               <img
                 src="https://images.unsplash.com/photo-1500522144261-ea64433bbe27?auto=format&fit=facearea&facepad=3&w=64&h=64&q=80"
-                alt="Contact"
-                class="w-8 h-8 rounded-full mr-3"
-              />
+                alt="Contact" class="w-8 h-8 rounded-full mr-3" />
               <div class="flex-1">
                 <div class="flex justify-between text-sm">
                   <span class="font-medium">Sophia Lee</span>
@@ -563,17 +378,9 @@
             </div>
           </div>
           <div class="mt-4 bg-gray-50 border rounded-md flex flex-col h-64">
-            <div
-              class="bg-gray-100 px-3 py-2 border-b text-sm font-medium flex justify-between items-center"
-            >
+            <div class="bg-gray-100 px-3 py-2 border-b text-sm font-medium flex justify-between items-center">
               <span>John Smith</span>
-              <svg
-                class="w-4 h-4 text-gray-400"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
+              <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </div>
@@ -581,9 +388,7 @@
               <div class="flex">
                 <img
                   src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=facearea&facepad=3&w=64&h=64&q=80"
-                  alt="Avatar"
-                  class="w-6 h-6 rounded-full mr-2"
-                />
+                  alt="Avatar" class="w-6 h-6 rounded-full mr-2" />
                 <div class="bg-white rounded-md p-2 max-w-xs shadow text-sm">
                   Hey Alex! Are you joining the study session later?
                 </div>
@@ -596,9 +401,7 @@
               <div class="flex">
                 <img
                   src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=facearea&facepad=3&w=64&h=64&q=80"
-                  alt="Avatar"
-                  class="w-6 h-6 rounded-full mr-2"
-                />
+                  alt="Avatar" class="w-6 h-6 rounded-full mr-2" />
                 <div class="bg-white rounded-md p-2 max-w-xs shadow text-sm">
                   Great! Don't forget to bring the notes.
                 </div>
@@ -606,27 +409,13 @@
             </div>
             <div class="p-2 border-t">
               <form class="flex items-center">
-                <input
-                  type="text"
+                <input type="text"
                   class="flex-1 bg-gray-100 border border-gray-300 rounded-full py-2 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                  placeholder="Type a message…"
-                />
-                <button
-                  type="submit"
-                  class="ml-2 text-indigo-600 hover:text-indigo-800 focus:outline-none"
-                >
-                  <svg
-                    class="w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M2 12l1.82 1.275c.213.149.213.5 0 .65L2 15.2m20-6v6m0 0l-1.82-1.275c-.213-.149-.213-.5 0-.65L22 12"
-                    />
+                  placeholder="Type a message…" />
+                <button type="submit" class="ml-2 text-indigo-600 hover:text-indigo-800 focus:outline-none">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M2 12l1.82 1.275c.213.149.213.5 0 .65L2 15.2m20-6v6m0 0l-1.82-1.275c-.213-.149-.213-.5 0-.65L22 12" />
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H4m16 0h-7" />
                   </svg>
                 </button>
@@ -637,20 +426,12 @@
       </aside>
     </div>
     <!-- Mobile chat drawer -->
-    <div
-      id="mobile-chat"
-      class="fixed inset-y-0 right-0 w-80 bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col z-50"
-    >
+    <div id="mobile-chat"
+      class="fixed inset-y-0 right-0 w-80 bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col z-50">
       <div class="bg-gray-100 px-4 py-3 flex items-center justify-between border-b">
         <h3 class="text-lg font-semibold">Chats</h3>
         <button id="close-mobile-chat" class="text-gray-500 hover:text-gray-700">
-          <svg
-            class="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-          >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
@@ -660,9 +441,7 @@
         <div class="flex items-center p-2 rounded-md hover:bg-gray-100 cursor-pointer">
           <img
             src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=facearea&facepad=3&w=64&h=64&q=80"
-            alt="Contact avatar"
-            class="w-8 h-8 rounded-full mr-3"
-          />
+            alt="Contact avatar" class="w-8 h-8 rounded-full mr-3" />
           <div class="flex-1">
             <div class="flex justify-between text-sm">
               <span class="font-medium">John Smith</span>

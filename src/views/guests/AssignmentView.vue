@@ -2,20 +2,16 @@
 import router from '@/router'
 </script>
 <template>
+
   <body class="bg-gray-100 text-gray-800 antialiased">
     <!-- Top Nav -->
     <header class="bg-white border-b shadow-sm fixed top-0 inset-x-0 z-50">
       <div class="max-w-7xl mx-auto h-16 flex items-center justify-between px-4 sm:px-6 lg:px-8">
         <div class="flex items-center space-x-4">
-          <router-link to="/index" class="text-2xl font-bold text-indigo-600"
-            >EduConnect</router-link
-          >
+          <router-link to="/index" class="text-2xl font-bold text-indigo-600">EduConnect</router-link>
           <div class="hidden md:block">
-            <input
-              type="text"
-              placeholder="Search assignments…"
-              class="w-64 bg-gray-100 border border-gray-300 rounded-full py-2 px-4 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-            />
+            <input type="text" placeholder="Search assignments…"
+              class="w-64 bg-gray-100 border border-gray-300 rounded-full py-2 px-4 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
           </div>
         </div>
         <div class="flex items-center space-x-4">
@@ -23,23 +19,14 @@ import router from '@/router'
             <button id="profile-button" class="flex items-center focus:outline-none">
               <img
                 src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?auto=format&fit=facearea&facepad=3&w=64&h=64&q=80"
-                alt="Avatar"
-                class="w-8 h-8 rounded-full"
-              />
+                alt="Avatar" class="w-8 h-8 rounded-full" />
             </button>
-            <div
-              id="profile-dropdown"
-              class="hidden absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg py-2 z-10"
-            >
-              <router-link to="/profile" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
-                >View Profile</router-link
-              >
-              <router-link to="#settings" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
-                >Settings</router-link
-              >
-              <router-link to="#logout" class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
-                >Log Out</router-link
-              >
+            <div id="profile-dropdown"
+              class="hidden absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg py-2 z-10">
+              <router-link to="/profile" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">View
+                Profile</router-link>
+              <router-link to="#settings" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Settings</router-link>
+              <router-link to="#logout" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Log Out</router-link>
             </div>
           </div>
         </div>
@@ -52,109 +39,44 @@ import router from '@/router'
           <h3 class="text-lg font-semibold mb-4">Navigation</h3>
           <nav class="space-y-2">
             <router-link to="/feed" class="flex items-center text-gray-600 hover:text-indigo-600">
-              <svg
-                class="w-5 h-5 mr-2"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M8 17l4-4-4-4m8 8l-4-4 4-4"
-                />
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 17l4-4-4-4m8 8l-4-4 4-4" />
               </svg>
               Feed
             </router-link>
-            <router-link
-              to="/communities"
-              class="flex items-center text-gray-600 hover:text-indigo-600"
-            >
-              <svg
-                class="w-5 h-5 mr-2"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1M3 8a4 4 0 014-4 4 4 0 014 4v4a4 4 0 01-4 4 4 4 0 01-4-4V8zM17 8a4 4 0 00-4-4 4 4 0 00-4 4v4a4 4 0 004 4 4 4 0 004-4V8z"
-                />
+            <router-link to="/communities" class="flex items-center text-gray-600 hover:text-indigo-600">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1M3 8a4 4 0 014-4 4 4 0 014 4v4a4 4 0 01-4 4 4 4 0 01-4-4V8zM17 8a4 4 0 00-4-4 4 4 0 00-4 4v4a4 4 0 004 4 4 4 0 004-4V8z" />
               </svg>
               Communities
             </router-link>
             <router-link to="/assignments" class="flex items-center text-indigo-600 font-medium">
-              <svg
-                class="w-5 h-5 mr-2"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 12h6m2 4H7m4 4h2M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z"
-                />
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 12h6m2 4H7m4 4h2M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z" />
               </svg>
               Assignments
             </router-link>
             <router-link to="/events" class="flex items-center text-gray-600 hover:text-indigo-600">
-              <svg
-                class="w-5 h-5 mr-2"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M8 7V3m8 4V3M3 11h18M5 19h14a2 2 0 002-2V7H3v10a2 2 0 002 2z"
-                />
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8 7V3m8 4V3M3 11h18M5 19h14a2 2 0 002-2V7H3v10a2 2 0 002 2z" />
               </svg>
               Events
             </router-link>
             <router-link to="/chat" class="flex items-center text-gray-600 hover:text-indigo-600">
-              <svg
-                class="w-5 h-5 mr-2"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"
-                />
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
               </svg>
               Chat
             </router-link>
-            <router-link
-              to="/profile"
-              class="flex items-center text-gray-600 hover:text-indigo-600"
-            >
-              <svg
-                class="w-5 h-5 mr-2"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M5.121 17.804A9 9 0 1118.878 6.196a9 9 0 01-13.757 11.608z"
-                />
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                />
+            <router-link to="/profile" class="flex items-center text-gray-600 hover:text-indigo-600">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M5.121 17.804A9 9 0 1118.878 6.196a9 9 0 01-13.757 11.608z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
               Profile
             </router-link>
@@ -178,12 +100,8 @@ import router from '@/router'
                 </p>
               </div>
               <div class="flex flex-col items-end space-y-2">
-                <span class="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full"
-                  >In Progress</span
-                >
-                <button
-                  class="bg-indigo-600 text-white text-sm px-3 py-1 rounded-md hover:bg-indigo-700"
-                >
+                <span class="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full">In Progress</span>
+                <button class="bg-indigo-600 text-white text-sm px-3 py-1 rounded-md hover:bg-indigo-700">
                   Submit
                 </button>
               </div>
@@ -197,12 +115,8 @@ import router from '@/router'
                 </p>
               </div>
               <div class="flex flex-col items-end space-y-2">
-                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full"
-                  >Not Started</span
-                >
-                <button
-                  class="bg-indigo-600 text-white text-sm px-3 py-1 rounded-md hover:bg-indigo-700"
-                >
+                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">Not Started</span>
+                <button class="bg-indigo-600 text-white text-sm px-3 py-1 rounded-md hover:bg-indigo-700">
                   Start
                 </button>
               </div>
@@ -217,9 +131,7 @@ import router from '@/router'
               </div>
               <div class="flex flex-col items-end space-y-2">
                 <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded-full">Overdue</span>
-                <button
-                  class="bg-indigo-600 text-white text-sm px-3 py-1 rounded-md hover:bg-indigo-700"
-                >
+                <button class="bg-indigo-600 text-white text-sm px-3 py-1 rounded-md hover:bg-indigo-700">
                   Submit Late
                 </button>
               </div>
@@ -239,13 +151,8 @@ import router from '@/router'
                 </p>
               </div>
               <div class="flex flex-col items-end space-y-2">
-                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full"
-                  >Graded: 95%</span
-                >
-                <button
-                  class="bg-gray-200 text-gray-700 text-sm px-3 py-1 rounded-md cursor-not-allowed"
-                  disabled
-                >
+                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">Graded: 95%</span>
+                <button class="bg-gray-200 text-gray-700 text-sm px-3 py-1 rounded-md cursor-not-allowed" disabled>
                   View
                 </button>
               </div>
@@ -259,13 +166,8 @@ import router from '@/router'
                 </p>
               </div>
               <div class="flex flex-col items-end space-y-2">
-                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full"
-                  >Graded: 88%</span
-                >
-                <button
-                  class="bg-gray-200 text-gray-700 text-sm px-3 py-1 rounded-md cursor-not-allowed"
-                  disabled
-                >
+                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">Graded: 88%</span>
+                <button class="bg-gray-200 text-gray-700 text-sm px-3 py-1 rounded-md cursor-not-allowed" disabled>
                   View
                 </button>
               </div>
@@ -279,13 +181,8 @@ import router from '@/router'
                 </p>
               </div>
               <div class="flex flex-col items-end space-y-2">
-                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full"
-                  >Graded: 92%</span
-                >
-                <button
-                  class="bg-gray-200 text-gray-700 text-sm px-3 py-1 rounded-md cursor-not-allowed"
-                  disabled
-                >
+                <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">Graded: 92%</span>
+                <button class="bg-gray-200 text-gray-700 text-sm px-3 py-1 rounded-md cursor-not-allowed" disabled>
                   View
                 </button>
               </div>
